@@ -1,0 +1,28 @@
+﻿body {
+}
+
+^contentpage {
+    background-color: ghostwhite;
+}
+
+#lblTitle {
+    height: 50;
+    background-color: navy;
+    color: white;
+    text-align: center;
+    font-size: 16;
+    font-weight: bold;
+}
+
+#lblUsuarioConectado {
+    font-weight: bold;
+    color: darkblue;
+}
+
+.midTitle {
+    height: 20;
+    background-color: lightcyan;
+    text-align: center;
+    font-size: 14;
+    font-weight: 100;
+}

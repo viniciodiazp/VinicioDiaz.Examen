@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VinicioDiaz.Examen.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="lblUsuarioConectado" Text="" FontAttributes="Bold"></Label>
+                <Label x:Name="lblTitle" Text="Registro"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    
+                    <Label x:Name="lblDatos" class="midTitle" Text="Parcial 1" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"></Label>
+                    <!-- Datos Personales -->
+                    <Label Text="Nombre" Grid.Row="1" Grid.Column="0"></Label>
+                    <Entry x:Name="txtNombre" Grid.Row="1" Grid.Column="1" Keyboard="Text" TextChanged="txtNombre_TextChanged"></Entry>
+                    <Label Text="Correo" Grid.Row="2" Grid.Column="0"></Label>
+                    <Entry x:Name="txtEmail" Grid.Row="2" Grid.Column="1" Keyboard="Email" TextChanged="txtEmail_TextChanged"></Entry>
+
+                    <!-- Curso -->
+                    <Label x:Name="lblCurso" class="midTitle" Text="Curso" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"></Label>
+                    <Label Text="Valor Total" Grid.Row="4" Grid.Column="0"></Label>
+                    <Entry x:Name="txtTotal" Grid.Row="4" Grid.Column="1" Keyboard="Numeric" TextChanged="txtTotal_TextChanged"></Entry>
+                    <Label Text="Pago inicial" Grid.Row="5" Grid.Column="0"></Label>
+                    <Entry x:Name="txtPagoInicial" Grid.Row="5" Grid.Column="1" Keyboard="Numeric" TextChanged="txtPagoInicial_TextChanged"></Entry>
+                    <Label Text="Pago mensual" Grid.Row="6" Grid.Column="0"></Label>
+                    <Entry x:Name="txtCuota" Grid.Row="6" Grid.Column="1" IsReadOnly="True"></Entry>
+
+                    <!-- Botones -->
+                    <Button x:Name="btnCalcular" Grid.Row="7" Grid.Column="0" Text="Calcular" Clicked="btnCalcular_Clicked"></Button>
+                    <Button x:Name="btnGuardar" Grid.Row="7" Grid.Column="1" Text="Guardar" Clicked="btnGuardar_Clicked"></Button>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

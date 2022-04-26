@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VinicioDiaz.Examen.Resumen">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="lblUsuarioConectado" Text="" FontAttributes="Bold"></Label>
+                <Label x:Name="lblTitle" Text="Registro"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Label x:Name="lblDatos" class="midTitle" Text="Resumen" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"></Label>
+                    <!-- Datos Personales -->
+                    <Label Text="Nombre" Grid.Row="1" Grid.Column="0"></Label>
+                    <Label x:Name="txtNombre" Text="" Grid.Row="1" Grid.Column="1"></Label>
+                    
+                    <Label Text="Total" Grid.Row="2" Grid.Column="0"></Label>
+                    <Label x:Name="txtTotal" Text="" Grid.Row="2" Grid.Column="1"></Label>
+                    
+                    <Label Text="Pago inicial" Grid.Row="3" Grid.Column="0"></Label>
+                    <Label x:Name="txtPagoInicial" Text="" Grid.Row="3" Grid.Column="1"></Label>
+                    
+                    <Label Text="Cuota mensual" Grid.Row="4" Grid.Column="0"></Label>
+                    <Label x:Name="txtCuota" Text="" Grid.Row="4" Grid.Column="1"></Label>
+                    <Label Text="-----------------" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"></Label>
+                    
+                    <Label Text="Total a pagar" Grid.Row="6" Grid.Column="0"></Label>
+                    <Label x:Name="txtTotalPagar" Text="" Grid.Row="6" Grid.Column="1"></Label>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
